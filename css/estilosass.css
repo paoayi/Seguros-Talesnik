@@ -371,6 +371,7 @@ h1 {
 }
 
 /*MEDIDAS RESPONSIVE*/
+/*//////////TABLET/////////////*/
 /*INDEX*/
 @media only screen and (max-width: 767px) {
   .contenedor {
@@ -490,7 +491,7 @@ h1 {
   }
 }
 
-/*CELULAR*/
+/*//////////CELULAR/////////////*/
 /*INDEX*/
 @media only screen and (max-width: 480px) {
   .contenedor {
