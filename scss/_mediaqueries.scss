@@ -102,15 +102,12 @@
     margin-left: 50px;
 }
 }
-/*MAX WIDTH 480PX CELULAR*/
+/*CELULAR*/
 /*INDEX*/
-@media (max-width: 480px) {
+
+@media only screen and (max-width: 480px){
     .contenedor{
-        background-color: yellowgreen;
         display: grid;
-        margin-top: 50px;
-        margin-left: 120px;
-        padding: 50px;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         grid-template-areas: 
@@ -122,15 +119,13 @@
 @media only screen and (max-width: 480px) {
     .tarjetas{
     width: 90%;
-    padding: 100px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    margin: 100px;
-    text-align: center;
-    min-height: 100px;
+    align-items:left;
+    text-align:left;
+    
 }
 .card-title{
     font-size: 0.8rem;

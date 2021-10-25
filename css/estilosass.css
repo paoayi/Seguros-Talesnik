@@ -490,16 +490,12 @@ h1 {
   }
 }
 
-/*MAX WIDTH 480PX CELULAR*/
+/*CELULAR*/
 /*INDEX*/
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   .contenedor {
-    background-color: yellowgreen;
     display: -ms-grid;
     display: grid;
-    margin-top: 50px;
-    margin-left: 120px;
-    padding: 50px;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr;
@@ -511,7 +507,6 @@ h1 {
 @media only screen and (max-width: 480px) {
   .tarjetas {
     width: 90%;
-    padding: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -524,12 +519,10 @@ h1 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 100px;
-    text-align: center;
-    min-height: 100px;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    text-align: left;
   }
   .card-title {
     font-size: 0.8rem;
