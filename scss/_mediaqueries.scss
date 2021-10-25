@@ -1,0 +1,223 @@
+/*MEDIDAS RESPONSIVE*/
+
+/*INDEX*/
+@media only screen and (max-width: 767px) {
+    .contenedor{
+        display: grid;
+        margin-top: 50px;
+        margin-left: 120px;
+        padding: 50px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "carousel"
+        "textoIndex";
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .tarjetas{
+    width: 90%;
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px;
+    text-align: center;
+    min-height: 100px;
+}
+.card-title{
+    font-size: 0.8rem;
+}
+.card-text{
+    text-align: center;
+    min-height: 100px;
+}
+.card-body{
+    min-height: 100px;
+}
+.card-text{
+    font-size: 0.8rem;
+}
+}
+/*COMPAÑIAS*/
+
+/*GRID CIAS*/
+@media only screen and (max-width: 767px) {
+
+    .contenedorCias{
+        width: 80vw;
+        margin: 10px;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns:  1fr;
+        grid-template-rows: 1fr 1fr ;
+        gap: 20px;
+        grid-template-areas: 
+        "textoCias1"
+        "textoCias2";
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+    }    
+.textoCias1 {
+    grid-area: textoCias1;
+    }
+
+.textoCias2 {
+    grid-area: textoCias2;
+}
+.contenedorEmpresas{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 100px;
+    gap: 50px;
+    border: 2px $bg_color9 solid;
+    padding: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+    :hover{
+        transform:scale(0.8, 0.8)
+    }
+}
+}
+/*SEGUROS*/
+@media only screen and (max-width: 767px) {
+.seguros{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 50vw;
+
+}
+.botones{
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+.btn-primary{
+    background: color $bg_color12;;
+    margin-left: 50px;
+}
+}
+/*MAX WIDTH 480PX CELULAR*/
+/*INDEX*/
+@media (max-width: 480px) {
+    .contenedor{
+        background-color: yellowgreen;
+        display: grid;
+        margin-top: 50px;
+        margin-left: 120px;
+        padding: 50px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "carousel"
+        "textoIndex";
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .tarjetas{
+    width: 90%;
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px;
+    text-align: center;
+    min-height: 100px;
+}
+.card-title{
+    font-size: 0.8rem;
+}
+.card-text{
+    text-align: center;
+    min-height: 100px;
+}
+.card-body{
+    min-height: 100px;
+}
+.card-text{
+    font-size: 0.8rem;
+}
+}
+/*NOSOTROS*/
+@media only screen and (max-width: 480px) {
+    .nosotros{
+    font-size: 0.8rem;
+    width:70%;
+}
+.nuestraMision{
+    font-size: 0.8rem;
+    width:70%;
+}
+.listaRazones{
+    font-size: 0.8rem;
+    width:70%;
+}
+}
+
+/*COMPAÑIAS*/
+@media only screen and (max-width: 480px) {
+
+    .contenedorCias{
+        width: 80vw;
+        margin: 10px;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns:  1fr;
+        grid-template-rows: 1fr 1fr ;
+        gap: 20px;
+        grid-template-areas: 
+        "textoCias1"
+        "textoCias2";
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+    }    
+.textoCias1 {
+    grid-area: textoCias1;
+    }
+
+.textoCias2 {
+    grid-area: textoCias2;
+}
+.contenedorEmpresas{
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 100px;
+    gap: 50px;
+    border: 2px $bg_color9 solid;
+    padding: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+    :hover{
+        transform:scale(0.8, 0.8)
+    }
+}
+}
+/*SEGUROS*/
+@media only screen and (max-width: 480px) {
+.seguros{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    background-size: cover;
+
+}
+.botones{
+    text-align: center;
+    margin: 100px;
+    
+    
+}
+.btn-primary{
+    background: color $bg_color12;;
+    
+}
+}

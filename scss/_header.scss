@@ -1,0 +1,33 @@
+.logo{
+    margin-left:50px;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: medium;
+    text-align: center;
+    color: $bg_color4;
+    text-align: left;
+}
+
+/*BARRA DE NAVEGACIÓN*/
+#navbarNav{
+    background-color: $bg_color5;
+    opacity: 80%;
+    justify-content: right;
+    font-size: 1.2rem;
+    font-weight: bold;
+    a{
+        color: $bg_color6;
+        margin: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        &:hover{
+        color: $bg_color7;
+        font-weight: bold;
+        background-color: $bg_color3;
+        padding: 10px;
+    }
+    }
+}

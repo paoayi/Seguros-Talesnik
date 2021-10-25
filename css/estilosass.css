@@ -1,0 +1,627 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /*background-color: $bg_color1;*/
+  background: -webkit-gradient(linear, left bottom, left top, from(#dee3e5), color-stop(#b6c0cb), to(white));
+  background: linear-gradient(to top, #dee3e5, #b6c0cb, white);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.logo {
+  margin-left: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: medium;
+  text-align: center;
+  color: #2256a5;
+  text-align: left;
+}
+
+/*BARRA DE NAVEGACIÓN*/
+#navbarNav {
+  background-color: #c2d2e9;
+  opacity: 80%;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#navbarNav a {
+  color: #161d6f;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#navbarNav a:hover {
+  color: #2256a5;
+  font-weight: bold;
+  background-color: white;
+  padding: 10px;
+}
+
+/*INDEX*/
+.contenedor {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 50px;
+  margin-left: 120px;
+  padding: 50px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "carousel textoIndex";
+}
+
+.carousel {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: carousel;
+  grid-area-margin: 50px;
+}
+
+.textoIndex {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: textoIndex;
+  grid-area-padding: 50px;
+  grid-area-margin: 50px;
+  grid-area-font-size: 1.2rem;
+  grid-area-text-align: left;
+}
+
+/*FOTO GRANDE
+.contenedor10{
+    background-image: url("/img/familia\ en\ auto.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed; 
+    text-align: center;
+}
+.carousel-inner{
+    background-image: url("/img/familiafeliz2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed; 
+    text-align: center;
+}
+*/
+/*NOSOTROS*/
+.nosotros {
+  margin-bottom: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  background-color: #c7ffd8;
+  margin: 50px;
+  border: #1e4d79 solid 2px;
+}
+
+.nosotros h2 {
+  color: #706047;
+  font-weight: normal;
+  font-size: 2rem;
+  margin: 10px;
+  padding: 2px;
+}
+
+.nosotros:hover {
+  -webkit-transform: translate(100px, 30px);
+          transform: translate(100px, 30px);
+}
+
+.nuestraMision {
+  margin-bottom: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  background-color: antiquewhite;
+  margin: 50px;
+  border: #1e4d79 solid 2px;
+}
+
+.nuestraMision h2 {
+  color: #706047;
+  font-weight: normal;
+  font-size: 2rem;
+  margin: 10px;
+  padding: 2px;
+}
+
+.nuestraMision:hover {
+  -webkit-transform: translate(100px, 30px);
+          transform: translate(100px, 30px);
+}
+
+.listaRazones {
+  margin-bottom: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  background-color: antiquewhite;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #b6c0cb;
+  opacity: 0.9;
+  margin: 50px;
+  border: #1e4d79 solid 2px;
+}
+
+.listaRazones h2 {
+  color: #706047;
+  font-weight: normal;
+  font-size: 1.8rem;
+  margin: 10px;
+  padding: 2px;
+}
+
+.listaRazones:hover {
+  -webkit-transform: translate(100px, 30px);
+          transform: translate(100px, 30px);
+}
+
+/*COMPAÑIAS*/
+/*GRID CIAS*/
+.contenedorCias {
+  width: 100vw;
+  margin: 10px;
+  margin-top: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 20px;
+      grid-template-areas: "textoCias1" "textoCias2";
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+.textoCias1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: textoCias1;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.textoCias2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: textoCias2;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.contenedorEmpresas {
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-bottom: 100px;
+  gap: 50px;
+  border: 2px #1e4d79 solid;
+  padding: 50px;
+  margin-bottom: 100px;
+}
+
+.contenedorEmpresas :hover {
+  -webkit-transform: scale(0.8, 0.8);
+          transform: scale(0.8, 0.8);
+}
+
+/*SEGUROS*/
+.seguros {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  background-size: cover;
+}
+
+.botones {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.btn-primary {
+  background: color #5e83ba;
+  margin-left: 50px;
+}
+
+/*CONTACTO*/
+.contacto {
+  width: 50%;
+  padding: 50px;
+  margin: 80px;
+  background-color: #5e83ba;
+  opacity: 70%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contacto .form {
+  background-color: white;
+  padding: 70px;
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contacto .nom {
+  background-color: #666;
+  opacity: 0.7;
+  padding: 10px;
+  border: 3px solid black;
+  margin: 10px;
+  width: 20rem;
+}
+
+.contacto .apel {
+  background-color: #98ded9;
+  opacity: 0.7;
+  padding: 10px;
+  border: 3px solid black;
+  margin: 10px;
+  width: 20rem;
+}
+
+.contacto .ema {
+  background-color: #161d6f;
+  color: white;
+  opacity: 0.8;
+  padding: 10px;
+  border: 3px solid black;
+  margin: 10px;
+  width: 20rem;
+}
+
+.contacto .loc {
+  background-color: #666;
+  opacity: 0.7;
+  padding: 10px;
+  border: 3px solid black;
+  margin: 10px;
+  width: 20rem;
+}
+
+.contacto .men {
+  background-color: #98ded9;
+  opacity: 0.7;
+  padding: 10px;
+  border: 3px solid black;
+  margin: 10px;
+  width: 20rem;
+}
+
+.contacto .rob {
+  background-color: #98ded9;
+  color: white;
+  opacity: 0.8;
+  padding: 10px;
+  border: 3px solid black;
+  margin: 10px;
+}
+
+.contacto .env {
+  background-color: darkgrey;
+  opacity: 0.8;
+  padding: 10px;
+  border: 3px solid black;
+  margin: 10px;
+}
+
+.conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*MEDIDAS RESPONSIVE*/
+/*INDEX*/
+@media only screen and (max-width: 767px) {
+  .contenedor {
+    display: -ms-grid;
+    display: grid;
+    margin-top: 50px;
+    margin-left: 120px;
+    padding: 50px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "carousel" "textoIndex";
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .tarjetas {
+    width: 90%;
+    padding: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 100px;
+    text-align: center;
+    min-height: 100px;
+  }
+  .card-title {
+    font-size: 0.8rem;
+  }
+  .card-text {
+    text-align: center;
+    min-height: 100px;
+  }
+  .card-body {
+    min-height: 100px;
+  }
+  .card-text {
+    font-size: 0.8rem;
+  }
+}
+
+/*COMPAÑIAS*/
+/*GRID CIAS*/
+@media only screen and (max-width: 767px) {
+  .contenedorCias {
+    width: 80vw;
+    margin: 10px;
+    margin-top: 50px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    gap: 20px;
+        grid-template-areas: "textoCias1" "textoCias2";
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+  }
+  .textoCias1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: textoCias1;
+  }
+  .textoCias2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: textoCias2;
+  }
+  .contenedorEmpresas {
+    width: 100vw;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    padding-bottom: 100px;
+    gap: 50px;
+    border: 2px #1e4d79 solid;
+    padding: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+  .contenedorEmpresas :hover {
+    -webkit-transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
+  }
+}
+
+/*SEGUROS*/
+@media only screen and (max-width: 767px) {
+  .seguros {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 50vw;
+  }
+  .botones {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .btn-primary {
+    background: color #5e83ba;
+    margin-left: 50px;
+  }
+}
+
+/*MAX WIDTH 480PX CELULAR*/
+/*INDEX*/
+@media (max-width: 480px) {
+  .contenedor {
+    background-color: yellowgreen;
+    display: -ms-grid;
+    display: grid;
+    margin-top: 50px;
+    margin-left: 120px;
+    padding: 50px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "carousel" "textoIndex";
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .tarjetas {
+    width: 90%;
+    padding: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 100px;
+    text-align: center;
+    min-height: 100px;
+  }
+  .card-title {
+    font-size: 0.8rem;
+  }
+  .card-text {
+    text-align: center;
+    min-height: 100px;
+  }
+  .card-body {
+    min-height: 100px;
+  }
+  .card-text {
+    font-size: 0.8rem;
+  }
+}
+
+/*NOSOTROS*/
+@media only screen and (max-width: 480px) {
+  .nosotros {
+    font-size: 0.8rem;
+    width: 70%;
+  }
+  .nuestraMision {
+    font-size: 0.8rem;
+    width: 70%;
+  }
+  .listaRazones {
+    font-size: 0.8rem;
+    width: 70%;
+  }
+}
+
+/*COMPAÑIAS*/
+@media only screen and (max-width: 480px) {
+  .contenedorCias {
+    width: 80vw;
+    margin: 10px;
+    margin-top: 50px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    gap: 20px;
+        grid-template-areas: "textoCias1" "textoCias2";
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+  }
+  .textoCias1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: textoCias1;
+  }
+  .textoCias2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: textoCias2;
+  }
+  .contenedorEmpresas {
+    width: 90vw;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding-bottom: 100px;
+    gap: 50px;
+    border: 2px #1e4d79 solid;
+    padding: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+  .contenedorEmpresas :hover {
+    -webkit-transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
+  }
+}
+
+/*SEGUROS*/
+@media only screen and (max-width: 480px) {
+  .seguros {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    background-size: cover;
+  }
+  .botones {
+    text-align: center;
+    margin: 100px;
+  }
+  .btn-primary {
+    background: color #5e83ba;
+  }
+}
+/*# sourceMappingURL=estilosass.css.map */

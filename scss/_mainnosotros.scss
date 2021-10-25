@@ -1,0 +1,55 @@
+/*NOSOTROS*/
+@mixin nos1 ($bg-color) {
+    margin-bottom: 1.2rem;
+    display: flex;
+    width:90%;
+    background-color: $bg-color;
+    margin: 50px;
+    border:$bg_color9 solid 2px;
+    h2{
+        color:$bg_color10 ;
+        font-weight: normal;
+        font-size: 2rem;
+        margin: 10px;
+        padding: 2px;
+    }
+    &:hover{
+        transform:translate(100px, 30px)
+    }
+}
+
+
+
+.nosotros{
+    @include nos1($bg_color8)
+}
+
+    
+.nuestraMision{
+    @include nos1($bg_color11)
+}
+
+
+
+.listaRazones{
+    margin-bottom: 1.2rem;
+    display: flex;
+    width:90%;
+    background-color: $bg_color11;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color:$bg_color2;
+    opacity: 0.9;
+    margin: 50px;
+    border:$bg_color9 solid 2px;
+    h2{
+        color:$bg_color10 ;
+        font-weight: normal;
+        font-size: 1.8rem;
+        margin: 10px;
+        padding: 2px;
+    }
+&:hover{
+        transform:translate(100px, 30px)
+    }
+}

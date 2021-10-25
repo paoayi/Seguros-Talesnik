@@ -1,0 +1,305 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to top,#dee3e5, #b6c0cb, white);
+    background-size: cover;
+    background-attachment: fixed;
+}
+/*=============================
+PARA TODAS LAS PAGINAS     
+=============================*/
+.logo{
+    margin-left: 50px;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: medium;
+    text-align: center;
+    color: #2256a5;
+    text-align: left;
+}
+
+/*=============================
+BARRA DE NAVEGACIÓN     
+=============================*/
+#navbarNav{
+    background-color: #c2d2e9;
+    opacity: 80%;
+    justify-content: right;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+#navbarNav a{
+    color: #161D6F;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+#navbarNav a:hover{
+    color: #2256a5;
+    font-weight: bold;
+    background-color: white;
+    padding: 10px;
+}
+/*=============================
+PÁGINA PRINCIPAL   
+=============================*/
+.carousel{
+    margin: 50px;
+}   
+
+.texto{
+    padding: 50px;
+    margin: 50px;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "carousel texto";
+}
+
+/*Cards*/
+.tarjetas{
+    width: 90%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+}
+.card-title{
+    font-size: 1.2rem;
+}
+.card-text{
+    text-align: center;
+}
+/*=============================
+PÁGINA NOSOTROS  
+=============================*/
+h2{
+    margin: 5px;
+    padding: 2px;
+}
+.nosotros{
+    margin-bottom: 1.2rem;
+    display: flex;
+    width:90%;
+    background-color: #C7FFD8;
+    margin: 50px;
+    border:#1e4d79 solid 2px;
+}
+
+.nosotros h2{
+    color:#706047 ;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+.nosotros:hover{
+    transform:translate(100px, 30px)
+}
+
+
+.nuestraMision{
+    margin-bottom: 1.2rem;
+    display: flex;
+    width:90%;
+    background-color: antiquewhite;
+    margin: 80px;
+    border:#1e4d79 solid 2px;
+}
+.nuestraMision h2{
+    color:#706047 ;
+    font-weight: normal;
+    font-size: 2rem;
+}
+.nuestraMision:hover{
+    transform:translate(100px, 30px);
+}
+
+.listaRazones{
+    margin-bottom: 1.2rem;
+    display: flex;
+    width:90%;
+    background-color: antiquewhite;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color:#b6c0cb;
+    opacity: 0.9;
+    margin: 50px;
+    border:#1e4d79 solid 2px;
+}
+.listaRazones:hover{
+    transform:translate(100px, 30px);
+}
+.listaRazones h2{
+    color:#706047 ;
+    font-weight: normal;
+    font-size: 2rem;
+}
+/*=============================
+PÁGINA COMPAÑIAS 
+=============================*/
+/*GRID CIAS*/
+.contenedorCias{
+    width: 100vw;
+    margin: 10px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns:  1fr;
+    grid-template-rows: 1fr 1fr ;
+    gap: 20px;
+    grid-template-areas: 
+    "textoCias1"
+    "textoCias2";
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    
+}
+
+.contenedorEmpresas{
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-bottom: 100px;
+    gap: 50px;
+    border: 2px #1e4d79 solid;
+    padding: 50px;
+    margin-bottom: 100px;
+    }
+
+.contenedorEmpresas :hover{
+    transform:scale(0.8, 0.8)
+}    
+.textoCias1{
+color:#1e4d79;
+font-size: 1.2rem;
+font-weight: 300px;
+}
+.textoCias2{
+color:#1e4d79;
+font-size: 1.2rem;
+font-weight: 300px;
+}
+/*=============================
+PÁGINA SEGUROS  
+=============================*/
+.seguros{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+        background-size: cover;
+    
+}
+.botones{
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+.btn-primary{
+    background-color:#5e83ba;
+    margin-left: 50px;
+}
+/*=============================
+PÁGINA CONTACTO  
+=============================*/
+/*FLEX*/
+.contacto{
+    width: 50%;
+    padding: 50px;
+    margin: 80px;
+    background-color:#5e83ba;
+    opacity: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.contacto .form{
+    background-color: white;
+    padding: 70px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+.contacto .nom{
+    background-color: #666;
+    opacity: 0.7;
+    padding: 10px;
+    border: 3px solid black;
+    margin: 10px;
+    width: 20rem;
+    
+}
+.contacto .apel{
+    background-color:#98DED9;
+    opacity: 0.7;
+    padding: 10px;
+    border: 3px solid black;
+    margin: 10px;
+    width: 20rem;
+}
+.contacto .ema{
+    background-color:#161D6F;
+    color: white;
+    opacity: 0.8;
+    padding: 10px;
+    border: 3px solid black;
+    margin: 10px;
+    width: 20rem;
+}
+.contacto .loc{
+    background-color: #666;
+    opacity: 0.7;
+    padding: 10px;
+    border: 3px solid black;
+    margin: 10px;
+    width: 20rem;
+}
+.contacto .men{
+    background-color:#98DED9;
+    opacity: 0.7;
+    padding: 10px;
+    border: 3px solid black;
+    margin: 10px;
+    width: 20rem;
+}
+.contacto .rob{
+    background-color:#161D6F;
+    color: white;
+    opacity: 0.8;
+    padding: 10px;
+    border: 3px solid black;
+    margin: 10px;
+}
+.contacto .env{
+    background-color:darkgrey;
+    opacity: 0.8;
+    padding: 10px;
+    border: 3px solid black;
+    margin: 10px;
+}
+.conteiner{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}

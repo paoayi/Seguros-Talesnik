@@ -1,0 +1,47 @@
+/*INDEX*/
+
+.contenedor{
+    display: grid;
+    margin-top: 50px;
+    margin-left: 120px;
+    padding: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "carousel textoIndex";
+}
+
+.carousel{
+    grid-area: carousel{
+        margin: 50px;
+    }
+}
+.textoIndex{
+    grid-area: textoIndex{
+    padding: 50px;
+    margin: 50px;
+    font-size: 1.2rem;
+    text-align: left;
+}
+}
+
+
+
+
+/*FOTO GRANDE
+.contenedor10{
+    background-image: url("/img/familia\ en\ auto.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed; 
+    text-align: center;
+}
+.carousel-inner{
+    background-image: url("/img/familiafeliz2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed; 
+    text-align: center;
+}
+*/
