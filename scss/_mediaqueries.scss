@@ -1,6 +1,7 @@
 /*==========================
 TABLET   
 =============================*/
+/*INDEX*/
 
 
 /*INDEX*/
@@ -16,14 +17,6 @@ TABLET
         "carousel"
         "textoIndex";
     }
-.textoIndex{
-    grid-area: textoIndex{
-    padding: 100px;
-    margin: 50px;
-    font-size: 1.2rem;
-    text-align: left;
-}
-}
 }
 
 @media only screen and (max-width: 767px) {
@@ -41,33 +34,24 @@ TABLET
 }
 .card-title{
     font-size: 0.8rem;
-    text-align: center;
-
 }
 .card-text{
     text-align: center;
     min-height: 100px;
-    font-size: 0.8rem;
 }
 .card-body{
     min-height: 100px;
-    font-size: 0.8rem;
 }
 .card-text{
-    font-size: 0.8rem;
-}
-.list-group{
-    font-size: 0.8rem;
-    text-align: center;
-}
-.arriba{
     font-size: 0.8rem;
 }
 }
 /*COMPAÑIAS*/
 
 /*GRID CIAS*/
-@media only screen and (max-width: 767px) {
+/* Versión tablet */
+
+@media (min-width: 768px) {
 
     .contenedorCias{
         width: 80vw;
@@ -106,7 +90,9 @@ TABLET
 }
 }
 /*SEGUROS*/
-@media only screen and (max-width: 767px) {
+/* Versión tablet */
+
+@media (min-width: 768px) {
 .seguros{
     margin-top: 50px;
     margin-bottom: 50px;
@@ -124,12 +110,15 @@ TABLET
     margin-left: 50px;
 }
 }
-/*=============================
-CELULARES    
-=============================*/
-/*INDEX*/
 
-@media only screen and (max-width: 480px){
+
+
+
+/*=============================
+ESCRITORIO    
+=============================
+/*INDEX*/
+@media only screen and (max-width: 1024px){
     .contenedor{
         display: grid;
         grid-template-columns: 1fr;
@@ -142,7 +131,7 @@ CELULARES
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1024px) {
     .tarjetas{
     width: 90%;
     display: flex;
@@ -173,6 +162,8 @@ CELULARES
     font-size: 0.8rem;
 }
 }
+
+
 /*NOSOTROS*/
 @media only screen and (max-width: 480px) {
     .nosotros{
@@ -190,6 +181,7 @@ CELULARES
 }
 
 /*COMPAÑIAS*/
+
 @media only screen and (max-width: 480px) {
 
     .contenedorCias{
@@ -228,6 +220,7 @@ CELULARES
     }
 }
 }
+
 /*SEGUROS*/
 @media only screen and (max-width: 480px) {
 .seguros{
@@ -235,17 +228,19 @@ CELULARES
     margin-bottom: 50px;
     text-align: center;
     background-size: cover;
-
+}
+.btn-primary{
+    margin-block: 20px;
 }
 .botones{
     text-align: center;
     margin: 100px;
+    gap: 100px;
     
     
 }
 .btn-primary{
     background: color $bg_color12;;
-    
 }
 }
 

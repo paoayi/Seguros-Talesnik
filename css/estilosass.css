@@ -298,6 +298,9 @@ h1 {
   margin-bottom: 50px;
   text-align: center;
   background-size: cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .botones {
@@ -311,123 +314,15 @@ h1 {
 }
 
 /*CONTACTO*/
-.contacto {
-  width: 50%;
-  padding: 50px;
-  margin: 80px;
-  background-color: #5e83ba;
-  opacity: 70%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.contacto .form {
-  background-color: white;
-  padding: 70px;
-  margin: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.contacto .nom {
-  background-color: #666;
-  opacity: 0.7;
-  padding: 10px;
-  border: 3px solid black;
-  margin: 10px;
-  width: 20rem;
-}
-
-.contacto .apel {
-  background-color: #98ded9;
-  opacity: 0.7;
-  padding: 10px;
-  border: 3px solid black;
-  margin: 10px;
-  width: 20rem;
-}
-
-.contacto .ema {
-  background-color: #161d6f;
-  color: white;
-  opacity: 0.8;
-  padding: 10px;
-  border: 3px solid black;
-  margin: 10px;
-  width: 20rem;
-}
-
-.contacto .loc {
-  background-color: #666;
-  opacity: 0.7;
-  padding: 10px;
-  border: 3px solid black;
-  margin: 10px;
-  width: 20rem;
-}
-
-.contacto .men {
-  background-color: #98ded9;
-  opacity: 0.7;
-  padding: 10px;
-  border: 3px solid black;
-  margin: 10px;
-  width: 20rem;
-}
-
-.contacto .rob {
-  background-color: #98ded9;
-  color: white;
-  opacity: 0.8;
-  padding: 10px;
-  border: 3px solid black;
-  margin: 10px;
-}
-
-.contacto .env {
-  background-color: darkgrey;
-  opacity: 0.8;
-  padding: 10px;
-  border: 3px solid black;
-  margin: 10px;
-}
-
 .conteiner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 90%;
+  margin: 20px;
 }
 
 /*==========================
 TABLET   
 =============================*/
+/*INDEX*/
 /*INDEX*/
 @media only screen and (max-width: 767px) {
   .contenedor {
@@ -441,15 +336,6 @@ TABLET
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
         grid-template-areas: "carousel" "textoIndex";
-  }
-  .textoIndex {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: textoIndex;
-    grid-area-padding: 100px;
-    grid-area-margin: 50px;
-    grid-area-font-size: 1.2rem;
-    grid-area-text-align: left;
   }
 }
 
@@ -478,32 +364,23 @@ TABLET
   }
   .card-title {
     font-size: 0.8rem;
-    text-align: center;
   }
   .card-text {
     text-align: center;
     min-height: 100px;
-    font-size: 0.8rem;
   }
   .card-body {
     min-height: 100px;
-    font-size: 0.8rem;
   }
   .card-text {
-    font-size: 0.8rem;
-  }
-  .list-group {
-    font-size: 0.8rem;
-    text-align: center;
-  }
-  .arriba {
     font-size: 0.8rem;
   }
 }
 
 /*COMPAÑIAS*/
 /*GRID CIAS*/
-@media only screen and (max-width: 767px) {
+/* Versión tablet */
+@media (min-width: 768px) {
   .contenedorCias {
     width: 80vw;
     margin: 10px;
@@ -549,7 +426,8 @@ TABLET
 }
 
 /*SEGUROS*/
-@media only screen and (max-width: 767px) {
+/* Versión tablet */
+@media (min-width: 768px) {
   .seguros {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -567,10 +445,10 @@ TABLET
 }
 
 /*=============================
-CELULARES    
-=============================*/
+ESCRITORIO    
+=============================
 /*INDEX*/
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1024px) {
   .contenedor {
     display: -ms-grid;
     display: grid;
@@ -583,7 +461,7 @@ CELULARES
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1024px) {
   .tarjetas {
     width: 90%;
     display: -webkit-box;
@@ -696,9 +574,13 @@ CELULARES
     text-align: center;
     background-size: cover;
   }
+  .btn-primary {
+    margin-block: 20px;
+  }
   .botones {
     text-align: center;
     margin: 100px;
+    gap: 100px;
   }
   .btn-primary {
     background: color #5e83ba;
