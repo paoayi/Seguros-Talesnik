@@ -84,6 +84,61 @@ h1 {
   grid-area-text-align: left;
 }
 
+/*CARDS*/
+.tarjetas {
+  width: 90%;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+  text-align: center;
+  min-height: 200px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+}
+
+.card-text {
+  text-align: center;
+  min-height: 200px;
+}
+
+.card-body {
+  min-height: 200px;
+}
+
+/*FOTO GRANDE
+.contenedor10{
+    background-image: url("/img/familia\ en\ auto.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed; 
+    text-align: center;
+}
+.carousel-inner{
+    background-image: url("/img/familiafeliz2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed; 
+    text-align: center;
+}
+*/
 /*FOTO GRANDE
 .contenedor10{
     background-image: url("/img/familia\ en\ auto.jpg");
@@ -370,8 +425,9 @@ h1 {
           justify-content: center;
 }
 
-/*MEDIDAS RESPONSIVE*/
-/*//////////TABLET/////////////*/
+/*==========================
+TABLET   
+=============================*/
 /*INDEX*/
 @media only screen and (max-width: 767px) {
   .contenedor {
@@ -385,6 +441,15 @@ h1 {
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
         grid-template-areas: "carousel" "textoIndex";
+  }
+  .textoIndex {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: textoIndex;
+    grid-area-padding: 100px;
+    grid-area-margin: 50px;
+    grid-area-font-size: 1.2rem;
+    grid-area-text-align: left;
   }
 }
 
@@ -413,15 +478,25 @@ h1 {
   }
   .card-title {
     font-size: 0.8rem;
+    text-align: center;
   }
   .card-text {
     text-align: center;
     min-height: 100px;
+    font-size: 0.8rem;
   }
   .card-body {
     min-height: 100px;
+    font-size: 0.8rem;
   }
   .card-text {
+    font-size: 0.8rem;
+  }
+  .list-group {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .arriba {
     font-size: 0.8rem;
   }
 }
@@ -491,7 +566,9 @@ h1 {
   }
 }
 
-/*//////////CELULAR/////////////*/
+/*=============================
+CELULARES    
+=============================*/
 /*INDEX*/
 @media only screen and (max-width: 480px) {
   .contenedor {
@@ -502,6 +579,7 @@ h1 {
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
         grid-template-areas: "carousel" "textoIndex";
+    margin: 0px;
   }
 }
 
@@ -524,6 +602,14 @@ h1 {
         -ms-flex-align: left;
             align-items: left;
     text-align: left;
+    margin: 0px;
+  }
+  .textoIndex {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: textoIndex;
+    grid-area-font-size: 1.2rem;
+    grid-area-text-align: left;
   }
   .card-title {
     font-size: 0.8rem;

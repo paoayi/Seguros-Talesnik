@@ -1,5 +1,7 @@
-/*MEDIDAS RESPONSIVE*/
-/*//////////TABLET/////////////*/
+/*==========================
+TABLET   
+=============================*/
+
 
 /*INDEX*/
 @media only screen and (max-width: 767px) {
@@ -14,6 +16,14 @@
         "carousel"
         "textoIndex";
     }
+.textoIndex{
+    grid-area: textoIndex{
+    padding: 100px;
+    margin: 50px;
+    font-size: 1.2rem;
+    text-align: left;
+}
+}
 }
 
 @media only screen and (max-width: 767px) {
@@ -31,15 +41,26 @@
 }
 .card-title{
     font-size: 0.8rem;
+    text-align: center;
+
 }
 .card-text{
     text-align: center;
     min-height: 100px;
+    font-size: 0.8rem;
 }
 .card-body{
     min-height: 100px;
+    font-size: 0.8rem;
 }
 .card-text{
+    font-size: 0.8rem;
+}
+.list-group{
+    font-size: 0.8rem;
+    text-align: center;
+}
+.arriba{
     font-size: 0.8rem;
 }
 }
@@ -103,7 +124,9 @@
     margin-left: 50px;
 }
 }
-/*//////////CELULAR/////////////*/
+/*=============================
+CELULARES    
+=============================*/
 /*INDEX*/
 
 @media only screen and (max-width: 480px){
@@ -114,6 +137,8 @@
         grid-template-areas: 
         "carousel"
         "textoIndex";
+        margin: 0px;
+
     }
 }
 
@@ -126,7 +151,13 @@
     justify-content: space-between;
     align-items:left;
     text-align:left;
-    
+    margin: 0px;
+}
+.textoIndex{
+    grid-area: textoIndex{
+    font-size: 1.2rem;
+    text-align: left;
+}
 }
 .card-title{
     font-size: 0.8rem;
@@ -217,3 +248,4 @@
     
 }
 }
+
