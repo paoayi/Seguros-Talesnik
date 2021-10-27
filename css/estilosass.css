@@ -114,6 +114,7 @@ h1 {
 
 .card-title {
   font-size: 1.2rem;
+  text-align: center;
 }
 
 .card-text {
@@ -123,6 +124,11 @@ h1 {
 
 .card-body {
   min-height: 200px;
+  height: -100px;
+}
+
+.list-group {
+  height: -100px;
 }
 
 /*FOTO GRANDE
@@ -364,20 +370,28 @@ TABLET
             align-items: center;
     margin: 100px;
     text-align: center;
-    min-height: 100px;
+    height: -100px;
   }
   .card-title {
     font-size: 0.8rem;
+    text-align: center;
   }
   .card-text {
-    text-align: center;
+    text-align: justify;
     min-height: 100px;
   }
   .card-body {
     min-height: 100px;
+    text-align: center;
   }
   .card-text {
     font-size: 0.8rem;
+    text-align: center;
+  }
+  .list-group {
+    height: -100px;
+    font-size: 0.8rem;
+    text-align: center;
   }
 }
 
