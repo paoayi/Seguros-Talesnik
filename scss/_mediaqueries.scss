@@ -87,7 +87,7 @@ TABLET
 .contenedorEmpresas{
     width: 100vw;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     padding-bottom: 100px;
     gap: 50px;
     border: 2px $bg_color9 solid;
@@ -122,55 +122,33 @@ TABLET
 }
 }
 
-
-
-
-/*=============================
-ESCRITORIO    
-=============================
+/*==========================
+CELULARES 
+=============================*/
 /*INDEX*/
-@media only screen and (max-width: 1024px){
-    .contenedor{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        "carousel"
-        "textoIndex";
-        margin: 0px;
-
-    }
+@media only screen and (max-width: 480px) {
+.contenedor{
+    display: grid;
+    margin-top: 50px;
+    margin-left: 120px;
+    padding: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "carousel textoIndex";
 }
 
-@media only screen and (max-width: 1024px) {
-    .tarjetas{
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items:left;
-    text-align:left;
-    margin: 0px;
+.carousel{
+    grid-area: carousel{
+        margin: 50px;
+    }
 }
 .textoIndex{
     grid-area: textoIndex{
+    padding: 50px;
+    margin: 50px;
     font-size: 1.2rem;
     text-align: left;
 }
-}
-.card-title{
-    font-size: 0.8rem;
-}
-.card-text{
-    text-align: center;
-    min-height: 100px;
-}
-.card-body{
-    min-height: 100px;
-}
-.card-text{
-    font-size: 0.8rem;
 }
 }
 
@@ -192,7 +170,6 @@ ESCRITORIO
 }
 
 /*COMPAÑIAS*/
-
 @media only screen and (max-width: 480px) {
 
     .contenedorCias{

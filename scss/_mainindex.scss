@@ -35,6 +35,27 @@
     margin: 10px;
     text-align: center;
     min-height: 200px;
+    :hover{
+        transform:scale(0.9,0.9)
+}
+}
+
+.card1{
+    border:$bg_color4 2px solid;
+    height: -100px;
+    
+}
+.card2{
+    border:$bg_color4 2px solid;
+    height: -100px;
+}
+.card3{
+    border:$bg_color4 2px solid;
+    height: -100px;
+}
+.card4{
+    border:$bg_color4 2px solid;
+    height: -100px;
 }
 
 .card-title{
@@ -45,57 +66,7 @@
     text-align: center;
     min-height: 200px;
 }
-.card-body{
-    min-height: 200px;
-    height: -100px;
 
-}
 .list-group{
     height: -100px;
 }
-
-
-
-
-/*FOTO GRANDE
-.contenedor10{
-    background-image: url("/img/familia\ en\ auto.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed; 
-    text-align: center;
-}
-.carousel-inner{
-    background-image: url("/img/familiafeliz2.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed; 
-    text-align: center;
-}
-*/
-
-
-
-
-
-
-/*FOTO GRANDE
-.contenedor10{
-    background-image: url("/img/familia\ en\ auto.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed; 
-    text-align: center;
-}
-.carousel-inner{
-    background-image: url("/img/familiafeliz2.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed; 
-    text-align: center;
-}
-*/
