@@ -59,6 +59,11 @@ h1 {
   border: 2px #2256a5 solid;
 }
 
+.arriba {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
 /*INDEX*/
 .contenedor {
   display: -ms-grid;
@@ -84,7 +89,7 @@ h1 {
   grid-area: textoIndex;
   grid-area-padding: 50px;
   grid-area-margin: 50px;
-  grid-area-font-size: 1.2rem;
+  grid-area-font-size: 1rem;
   grid-area-text-align: left;
 }
 
@@ -113,28 +118,32 @@ h1 {
 }
 
 .tarjetas :hover {
-  -webkit-transform: scale(0.9, 0.9);
-          transform: scale(0.9, 0.9);
+  -webkit-transform: scale(0.95, 0.95);
+          transform: scale(0.95, 0.95);
+}
+
+.card-title {
+  background-color: #c2d2e9;
 }
 
 .card1 {
-  border: #2256a5 2px solid;
-  height: -100px;
+  font-size: 0.8rem;
+  border: #b6c0cb 2px solid;
 }
 
 .card2 {
-  border: #2256a5 2px solid;
-  height: -100px;
+  font-size: 0.8rem;
+  border: #b6c0cb 2px solid;
 }
 
 .card3 {
-  border: #2256a5 2px solid;
-  height: -100px;
+  font-size: 0.8rem;
+  border: #b6c0cb 2px solid;
 }
 
 .card4 {
-  border: #2256a5 2px solid;
-  height: -100px;
+  font-size: 0.8rem;
+  border: #b6c0cb 2px solid;
 }
 
 .card-title {
@@ -451,6 +460,7 @@ CELULARES
   .contenedor {
     display: -ms-grid;
     display: grid;
+    margin-left: 0px;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr 1fr;
@@ -468,6 +478,7 @@ CELULARES
     grid-area: textoIndex;
     font-size: 0.8rem;
     text-align: left;
+    margin-top: 50px;
   }
 }
 
@@ -511,6 +522,22 @@ CELULARES
   .list-group {
     font-size: 0.8rem;
     text-align: center;
+  }
+  .card1 {
+    height: -100px;
+    margin-bottom: 50px;
+  }
+  .card2 {
+    height: -100px;
+    margin-bottom: 50px;
+  }
+  .card3 {
+    height: -100px;
+    margin-bottom: 50px;
+  }
+  .card4 {
+    height: -100px;
+    margin-bottom: 50px;
   }
 }
 
