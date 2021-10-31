@@ -318,7 +318,7 @@ TABLET
 =============================*/
 /*INDEX*/
 /*INDEX*/
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .contenedor {
     display: -ms-grid;
     display: grid;
@@ -333,7 +333,7 @@ TABLET
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .tarjetas {
     width: 90%;
     padding: 100px;
@@ -354,23 +354,20 @@ TABLET
             align-items: center;
     margin: 100px;
     text-align: center;
-    height: -100px;
+    min-height: 100px;
   }
   .card-title {
     font-size: 0.8rem;
-    text-align: center;
   }
   .card-text {
-    text-align: justify;
+    text-align: center;
     min-height: 100px;
   }
   .card-body {
     min-height: 100px;
-    text-align: center;
   }
   .card-text {
     font-size: 0.8rem;
-    text-align: center;
   }
   .list-group {
     height: -100px;
@@ -454,32 +451,70 @@ CELULARES
   .contenedor {
     display: -ms-grid;
     display: grid;
-    margin-top: 50px;
-    margin-left: 120px;
-    padding: 50px;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
         grid-template-areas: "carousel textoIndex";
+    margin: 0px;
   }
-  .carousel {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: carousel;
-    grid-area-margin: 50px;
+}
+
+@media only screen and (max-width: 480px) and (max-width: 480px) {
+  .tarjetas {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    text-align: left;
+    margin: 0px;
   }
   .textoIndex {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: textoIndex;
-    grid-area-padding: 50px;
-    grid-area-margin: 50px;
-    grid-area-font-size: 1.2rem;
-    grid-area-text-align: left;
+    font-size: 1.2rem;
+    text-align: left;
+  }
+  .card-title {
+    font-size: 0.8rem;
+  }
+  .card-text {
+    text-align: center;
+    min-height: 100px;
+  }
+  .card-body {
+    min-height: 100px;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .card-text {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .list-group {
+    font-size: 0.8rem;
+    text-align: center;
   }
 }
 
-/*NOSOTROS*/
 @media only screen and (max-width: 480px) {
+  /*NOSOTROS*/
+}
+
+@media only screen and (max-width: 480px) and (max-width: 480px) {
   .nosotros {
     font-size: 0.8rem;
     width: 70%;
@@ -494,8 +529,11 @@ CELULARES
   }
 }
 
-/*COMPAÑIAS*/
 @media only screen and (max-width: 480px) {
+  /*COMPAÑIAS*/
+}
+
+@media only screen and (max-width: 480px) and (max-width: 480px) {
   .contenedorCias {
     width: 80vw;
     margin: 10px;
@@ -504,6 +542,8 @@ CELULARES
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     gap: 20px;
         grid-template-areas: "textoCias1" "textoCias2";
     padding-bottom: 50px;
@@ -538,8 +578,11 @@ CELULARES
   }
 }
 
-/*SEGUROS*/
 @media only screen and (max-width: 480px) {
+  /*SEGUROS*/
+}
+
+@media only screen and (max-width: 480px) and (max-width: 480px) {
   .seguros {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -555,7 +598,7 @@ CELULARES
     gap: 100px;
   }
   .btn-primary {
-    background: color #5e83ba;
+    background-color: #5e83ba;
   }
 }
 /*# sourceMappingURL=estilosass.css.map */
