@@ -287,7 +287,7 @@ h1 {
   padding-bottom: 100px;
   gap: 50px;
   margin-bottom: 100px;
-  margin-left: 110px;
+  margin-left: 20px;
 }
 
 .contenedorEmpresas :hover {
@@ -415,7 +415,7 @@ TABLET
     grid-area: textoCias2;
   }
   .contenedorEmpresas {
-    width: 100vw;
+    width: 90vw;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;
@@ -424,6 +424,7 @@ TABLET
     gap: 50px;
     border: 2px #1e4d79 solid;
     padding: 50px;
+    margin-left: 20px;
     margin-bottom: 100px;
     text-align: center;
   }
@@ -601,6 +602,7 @@ CELULARES
     padding-bottom: 100px;
     gap: 50px;
     text-align: justify;
+    margin-left: 110px;
   }
   .contenedorEmpresas :hover {
     -webkit-transform: scale(0.8, 0.8);
