@@ -245,7 +245,7 @@ CELULARES
     text-align: center;
     background-size: cover;
     align-items: center;
-    margin-left: 120px;
+    margin-left: 50px;
 }
 .btn-primary{
     margin-block: 20px;
@@ -253,6 +253,9 @@ CELULARES
 .botones{
     text-align: center;
     gap: 100px;
+}
+.btn-primary{
+    background-color: $bg_color12;
 }
 }
 }

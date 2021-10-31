@@ -603,7 +603,7 @@ CELULARES
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: 120px;
+    margin-left: 50px;
   }
   .btn-primary {
     margin-block: 20px;
@@ -611,6 +611,9 @@ CELULARES
   .botones {
     text-align: center;
     gap: 100px;
+  }
+  .btn-primary {
+    background-color: #5e83ba;
   }
 }
 /*# sourceMappingURL=estilosass.css.map */
