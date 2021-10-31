@@ -99,27 +99,6 @@ TABLET
 }
 }
 
-/*SEGUROS*/
-/* Versión tablet */
-
-@media (min-width: 768px) {
-.seguros{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    text-align: center;
-    width: 50vw;
-
-}
-.botones{
-    text-align: center;
-    margin-bottom: 50px;
-    
-}
-.btn-primary{
-    background: color $bg_color12;;
-    margin-left: 50px;
-}
-}
 
 /*==========================
 CELULARES 
@@ -262,19 +241,20 @@ CELULARES
 
 
 /*SEGUROS*/
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 480px){    
 .seguros{
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
     background-size: cover;
+    align-items: center;
+    margin-left: 120px;
 }
 .btn-primary{
     margin-block: 20px;
 }
 .botones{
     text-align: center;
-    margin: 100px;
     gap: 100px;
 }
 .btn-primary{
@@ -282,6 +262,7 @@ CELULARES
 }
 }
 }
+
 
 
 

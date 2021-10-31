@@ -304,6 +304,7 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 120px;
 }
 
 .botones {
@@ -431,25 +432,6 @@ TABLET
   .contenedorEmpresas :hover {
     -webkit-transform: scale(0.8, 0.8);
             transform: scale(0.8, 0.8);
-  }
-}
-
-/*SEGUROS*/
-/* Versión tablet */
-@media (min-width: 768px) {
-  .seguros {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    text-align: center;
-    width: 50vw;
-  }
-  .botones {
-    text-align: center;
-    margin-bottom: 50px;
-  }
-  .btn-primary {
-    background: color #5e83ba;
-    margin-left: 50px;
   }
 }
 
@@ -620,13 +602,16 @@ CELULARES
     margin-bottom: 50px;
     text-align: center;
     background-size: cover;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 120px;
   }
   .btn-primary {
     margin-block: 20px;
   }
   .botones {
     text-align: center;
-    margin: 100px;
     gap: 100px;
   }
   .btn-primary {
