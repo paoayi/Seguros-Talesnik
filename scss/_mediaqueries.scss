@@ -128,11 +128,23 @@ CELULARES
 .contenedor{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-    "carousel textoIndex";
-    margin: 0px;
+    "carousel 
+    textoIndex";
+   
 }
+.carousel{
+    grid-area: carousel;
+    }
+    
+.textoIndex{
+    grid-area: textoIndex;
+    font-size: 0.8rem;
+    text-align: left;
+}
+    
+
 
 @media only screen and (max-width: 480px) {
     .tarjetas{
@@ -147,11 +159,6 @@ CELULARES
     }
 
 
-.textoIndex{
-    grid-area: textoIndex;
-    font-size: 1.2rem;
-    text-align: left;
-}
 
 .card-title{
     font-size: 0.8rem;
@@ -161,7 +168,7 @@ CELULARES
     min-height: 100px;
 }
 .card-body{
-    min-height: 100px;
+    min-height: 50px;
     font-size: 0.8rem;
     text-align: center;
 
@@ -254,3 +261,6 @@ CELULARES
 }
 }
 }
+
+
+

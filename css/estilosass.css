@@ -453,10 +453,21 @@ CELULARES
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: "carousel textoIndex";
-    margin: 0px;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "carousel  textoIndex";
+  }
+  .carousel {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: carousel;
+  }
+  .textoIndex {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: textoIndex;
+    font-size: 0.8rem;
+    text-align: left;
   }
 }
 
@@ -481,13 +492,6 @@ CELULARES
     text-align: left;
     margin: 0px;
   }
-  .textoIndex {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    grid-area: textoIndex;
-    font-size: 1.2rem;
-    text-align: left;
-  }
   .card-title {
     font-size: 0.8rem;
   }
@@ -496,7 +500,7 @@ CELULARES
     min-height: 100px;
   }
   .card-body {
-    min-height: 100px;
+    min-height: 50px;
     font-size: 0.8rem;
     text-align: center;
   }
