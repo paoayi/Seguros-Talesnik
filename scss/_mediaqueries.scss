@@ -1,8 +1,6 @@
 /*==========================
 TABLET   
 =============================*/
-/*INDEX*/
-
 
 /*INDEX*/
 @media only screen and (max-width: 768px) {
@@ -88,7 +86,6 @@ TABLET
     grid-template-columns: 1fr 1fr 1fr;
     padding-bottom: 100px;
     gap: 50px;
-    border: 2px $bg_color9 solid;
     padding: 50px;
     margin-left: 20px;
     margin-bottom: 100px;
@@ -256,9 +253,6 @@ CELULARES
 .botones{
     text-align: center;
     gap: 100px;
-}
-.btn-primary{
-    background-color: $bg_color12;
 }
 }
 }
