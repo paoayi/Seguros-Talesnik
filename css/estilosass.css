@@ -154,6 +154,7 @@ h1 {
 .card-text {
   text-align: center;
   min-height: 200px;
+  padding-top: 30px;
 }
 
 .list-group {
