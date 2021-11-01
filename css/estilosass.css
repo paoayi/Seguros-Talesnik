@@ -317,6 +317,10 @@ h1 {
   background-color: #5e83ba;
 }
 
+.dropdown {
+  margin-top: 50px;
+}
+
 /*CONTACTO*/
 .conteiner {
   width: 90%;
@@ -387,7 +391,6 @@ TABLET
 
 /*COMPAÑIAS*/
 /*GRID CIAS*/
-/* Versión tablet - notebook */
 @media (min-width: 768px) {
   .contenedorCias {
     width: 80vw;
