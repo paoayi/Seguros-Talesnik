@@ -605,7 +605,7 @@ CELULARES
   /*SEGUROS*/
 }
 
-@media only screen and (max-width: 480px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) and (min-width: 480px) {
   .seguros {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -615,16 +615,20 @@ CELULARES
         -ms-flex-align: center;
             align-items: center;
     margin-left: 50px;
+    width: 100%;
   }
   .btn-primary {
     margin-block: 20px;
   }
   .botones {
     text-align: center;
-    gap: 100px;
   }
   .btn-primary {
     background-color: #5e83ba;
+    margin-right: 150px;
+  }
+  .dropdown {
+    gap: 50px;
   }
 }
 /*# sourceMappingURL=estilosass.css.map */
