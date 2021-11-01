@@ -249,16 +249,18 @@ CELULARES
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
-    background-size: cover;
     align-items: center;
     margin-left: 50px;
-    width: 100%;
+    width: 50%;
 }
 .btn-primary{
     margin-block: 20px;
+    
 }
 .botones{
     text-align: center;
+    margin-left: 100px;
+
 }
 .btn-primary{
     background-color: $bg_color12;
@@ -268,7 +270,6 @@ CELULARES
     gap: 50px;
 }
 }
-
 }
 
 
