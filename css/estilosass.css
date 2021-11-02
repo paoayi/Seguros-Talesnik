@@ -444,6 +444,34 @@ TABLET
   }
 }
 
+/*SEGUROS*/
+@media only screen and (min-width: 768px) {
+  .seguros {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 10px;
+  }
+  .btn-primary {
+    margin-block: 20px;
+  }
+  .botones {
+    text-align: center;
+    margin-left: 200px;
+  }
+  .btn-primary {
+    background-color: #5e83ba;
+    margin-right: 200px;
+    margin-left: 90px;
+  }
+  .dropdown {
+    gap: 50px;
+  }
+}
+
 /*==========================
 CELULARES 
 =============================*/
