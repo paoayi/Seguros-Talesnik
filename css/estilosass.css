@@ -8,7 +8,6 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  /*background-color: $bg_color1;*/
   background: -webkit-gradient(linear, left bottom, left top, from(#dee3e5), color-stop(#b6c0cb), to(white));
   background: linear-gradient(to top, #dee3e5, #b6c0cb, white);
   background-size: cover;
@@ -319,6 +318,7 @@ h1 {
 
 .dropdown {
   margin-top: 50px;
+  background-color: red;
 }
 
 /*CONTACTO*/
