@@ -343,6 +343,14 @@ TABLET
         grid-template-rows: 1fr;
         grid-template-areas: "carousel" "textoIndex";
   }
+  .textoIndex {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: textoIndex;
+    font-size: 0.8rem;
+    text-align: left;
+    margin-top: 50px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -420,18 +428,47 @@ TABLET
     width: 90vw;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     padding-bottom: 100px;
     gap: 50px;
-    padding: 50px;
+    padding: 120px;
     margin-left: 20px;
+    margin-right: 100px;
     margin-bottom: 100px;
     text-align: center;
   }
   .contenedorEmpresas :hover {
     -webkit-transform: scale(0.8, 0.8);
             transform: scale(0.8, 0.8);
+  }
+}
+
+/*SEGUROS*/
+@media only screen and (min-width: 768px) {
+  .seguros {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 10px;
+  }
+  .btn-primary {
+    margin-block: 20px;
+  }
+  .botones {
+    text-align: center;
+    margin-left: 200px;
+  }
+  .btn-primary {
+    background-color: #5e83ba;
+    margin-right: 200px;
+    margin-left: 90px;
+  }
+  .dropdown {
+    gap: 50px;
   }
 }
 
@@ -596,26 +633,29 @@ CELULARES
   /*SEGUROS*/
 }
 
-@media only screen and (max-width: 480px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) and (min-width: 480px) {
   .seguros {
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
-    background-size: cover;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: 50px;
+    margin-left: 10px;
   }
   .btn-primary {
     margin-block: 20px;
   }
   .botones {
     text-align: center;
-    gap: 100px;
+    margin-left: 200px;
   }
   .btn-primary {
     background-color: #5e83ba;
+    margin-right: 150px;
+  }
+  .dropdown {
+    gap: 50px;
   }
 }
 /*# sourceMappingURL=estilosass.css.map */
